@@ -38,6 +38,43 @@
             }
         },
         {
+            "id": 7,
+            "number": "01",
+            "name": "Liberation",
+            "year": 2021,
+            "img": "img/liberation2.jpg",
+            "project": {
+                "title": "E-commerce",
+                "description": "Описание проекта",
+                "contacts": {
+                    "dribbble": "https://dribbble.com/",
+                    "instagram": "https://www.instagram.com/"
+                },
+                "items": [
+                    {
+                        "description": "",
+                        "img": "img/icelandic.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/app.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/father.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/icelandic.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/liberation.jpg"
+                    }
+                ]
+            }
+        },
+        {
             "id": 2,
             "number": "02",
             "name": "Icelandic Mail App",
@@ -124,17 +161,15 @@
         "photo": ""
     },
     "contacts": {
-        "title": "Let’s connect!!!",
+        "title": "Let’s connect!",
         "message": "I’d love to hear from you; whether you want to learn more about my services, want to collaborate on a project, or simply just want to say hello.",
         "instructions": "You can fill out the form or get in touch with me in Telegram, WhatsApp or by email",
         "phone": "+7 980 701 17 18",
         "mail": "roman.nadirovich@gmail.com",
         "address": "https://formspree.io/f/myyrnlee",
         "socials": {
-            "dribble": "https://dribbble.com/roman_nadirovich",
-            "instagram": "https://www.instagram.com/roman.nadirovich/",
-            "twitter": "https://twitter.com/roman_nadirovich",
-            "telegram": "https://t.me/roman_nadirovich"
+            "dribble": "https://dribbble.com/Roman_Agaev",
+            "telegram": "https://t.me/roman_agaev"
         }
     }
 }
