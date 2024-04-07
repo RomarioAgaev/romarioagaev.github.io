@@ -38,43 +38,6 @@
             }
         },
         {
-            "id": 7,
-            "number": "01",
-            "name": "Liberation",
-            "year": 2021,
-            "img": "img/liberation2.jpg",
-            "project": {
-                "title": "E-commerce",
-                "description": "Описание проекта",
-                "contacts": {
-                    "dribbble": "https://dribbble.com/",
-                    "instagram": "https://www.instagram.com/"
-                },
-                "items": [
-                    {
-                        "description": "",
-                        "img": "img/icelandic.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/app.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/father.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/icelandic.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/liberation.jpg"
-                    }
-                ]
-            }
-        },
-        {
             "id": 2,
             "number": "02",
             "name": "Icelandic Mail App",
