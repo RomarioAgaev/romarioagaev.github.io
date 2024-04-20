@@ -1,0 +1,44 @@
+@import '../scss/_scss-vars';
+
+.footer {
+    user-select: none;
+    padding-bottom: 19px;
+
+    @media (min-width: $lg) {
+        padding-bottom: 79px;
+    }
+
+    @media (min-width: $xl) {
+        padding-bottom: 66px;
+    }
+
+    @media (min-width: $xxl) {
+        padding-bottom: 106px;
+    }
+
+    @media (min-width: $xxxl) {
+        padding-bottom: 95px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__copy {
+        color: var(--color-dark);
+        text-align: right;
+        font-size: 10px;
+        line-height: 20px; /* 200% */
+        margin-right: 6px;
+
+        @media (min-width: $lg) {
+            font-size: 12px;
+        }
+
+        @media (min-width: $xxxl) {
+            font-size: 14px;
+        }
+    }
+}

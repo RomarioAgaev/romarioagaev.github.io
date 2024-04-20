@@ -1,0 +1,13 @@
+:root {
+    --base-transition: all .1s linear;
+    --synth-transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    --synth-timing-func: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --font-family: 'Proxima Nova', sans-serif;
+
+    --color-primary: #0d0601;
+    --color-light: #f5f5f5;
+    --color-dark: #a3a3a3;
+    --color-accent: #f06500;
+    --color-back-prime: #f4f4f4;
+}

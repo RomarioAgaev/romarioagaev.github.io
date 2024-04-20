@@ -1,0 +1,36 @@
+section.page.contacts
+    .page__wrap
+        .page__content
+            .container
+                .row
+                    .col-6.col-lg-4.col-xxl-3.offset-lg-1.offset-xxxl-2
+                        .contacts__desc
+                            .contacts__header
+                                h2#contactsTitle.title
+                                p.text
+                                    span#contactsMessage
+                                    br
+                                    br
+                                    span#contactsInstructions
+
+                                p.contacts__data
+                                    a#contactsPhone
+                                    a#contactsMail
+
+                            .contacts__footer
+                                ul#contactsSocials.contacts__socials
+
+                    .col-6.col-lg-5.col-xxxl-4.offset-lg-1.offset-xxl-2.offset-xxxl-1
+                        .contacts__form
+                            form#contactsForm(action="" method="post")
+                                .contacts__form-container
+                                    label.contacts__form-wrap
+                                        input.contacts__form-input(type="text" name="name" placeholder="How may I address you?")
+                                    label.contacts__form-wrap
+                                        input.contacts__form-input(type="text" name="contacts", placeholder="Your contacts (email or phone)")
+                                label.contacts__form-wrap.contacts__form-wrap_text
+                                    textarea.contacts__form-message(name="message" placeholder="Your Message")
+
+                                .contacts__form-submit
+                                    button(type="submit") Connect with Romario
+                                    span

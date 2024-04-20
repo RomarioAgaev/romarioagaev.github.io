@@ -1,0 +1,100 @@
+@import 'scss-vars';
+
+.about {
+    .row {
+        height: 100%;
+    }
+
+    .title {
+        margin-bottom: 4px;
+
+        @media (min-width: $lg) {
+            margin-bottom: 2px;
+        }
+
+        @media (min-width: $xl) {
+            margin-bottom: 1px;
+        }
+
+        @media (min-width: $xxl) {
+            margin-bottom: 6px;
+        }
+
+        @media (min-width: $xxxl) {
+            margin-bottom: 6px;
+        }
+    }
+
+    .text {
+        @media (min-width: $xxxl) {
+            margin-left: -2px;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: 100%;
+        padding-left: 74px;
+        padding-right: 25px;
+
+        @media (min-width: $lg) {
+            gap: 16px;
+            padding-left: 0;
+            padding-right: 10px;
+        }
+
+        @media (min-width: $xl) {
+            gap: 22px;
+            padding: 0;
+        }
+
+        @media (min-width: $xxl) {
+            gap: 21px;
+        }
+
+        @media (min-width: $xxxl) {
+            gap: 19px
+        }
+    }
+
+    &__photo {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        height: 60.41666666666667vh;
+        min-height: 400px;
+        aspect-ratio: 350 / 464;
+        border-radius: 6px;
+        background: rgba(211,211,211,.05) no-repeat center;
+        background-size: cover;
+        background-image: url('../../img/placeholder.png');
+
+        @media (min-width: $xxl) {
+            height: 53.02734375vh;
+            min-height: 500px;
+            aspect-ratio: 410 / 543;
+        }
+
+        @media (min-width: $xxxl) {
+            height: 67.96296296296296vh;
+            min-height: 600px;
+            aspect-ratio: 554 / 734;
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

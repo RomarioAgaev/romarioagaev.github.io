@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+	<link rel="stylesheet" href="src/scss/main.scss">
+	<title>Rom Port</title>
+</head>
+<body>
+	<pug src="src/pug/header.pug"/>
+	<main class="main">
+		<div class="wrapper">
+			<div class="pages">
+				<div class="page-list">
+					<pug src="src/pug/portfolio.pug"/>
+					<pug src="src/pug/about.pug"/>
+					<pug src="src/pug/contacts.pug"/>
+				</div>
+			</div>
+		</div>
+	</main>
+	<pug src="src/pug/footer.pug"/>
+	<pug src="src/pug/project.pug"/>
+	<pug src="src/pug/blocker.pug"/>
+	<pug src="src/pug/loading.pug"/>
+	<script type="module" src="src/ts/main.ts"></script>
+</body>
+</html>

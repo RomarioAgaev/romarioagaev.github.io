@@ -1,0 +1,115 @@
+@import '../scss/_scss-vars';
+
+.header {
+    user-select: none;
+    padding-top: 17px;
+
+    @media (min-width: $lg) {
+        padding-top: 82px;
+    }
+
+    @media (min-width: $xl) {
+        padding-top: 69px;
+    }
+
+    @media (min-width: $xxl) {
+        padding-top: 109px;
+    }
+
+    @media (min-width: $xxxl) {
+        padding-top: 95px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+
+            @media (min-width: $xxl) {
+                gap: 21px;
+            }
+
+            @media (min-width: $xxxl) {
+                gap: 54px;
+            }
+
+            @media (min-width: $xxxl) {
+                gap: 42px;
+            }
+        }
+
+        &__item {
+            display: block;
+            position: relative;
+            padding-bottom: 6px;
+
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    &::after {
+                        width: calc(100% - 10px);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 1px;
+                border-radius: 999px;
+                opacity: 0;
+                background: var(--color-dark);
+                transition: var(--synth-transition);
+            }
+
+            button {
+                display: block;
+                position: relative;
+                background: transparent;
+                border-radius: 0;
+                border: none;
+                cursor: pointer;
+                font-size: 12px;
+                color: var(--color-dark);
+                transition: var(--synth-transition);
+
+                @media (min-width: $xxl) {
+                    font-size: 14px;
+                }
+
+                @media (min-width: $xxxl) {
+                    font-size: 18px;
+                }
+            }
+
+            &.active {
+                cursor: default;
+                pointer-events: none;
+
+                &::after {
+                    background: var(--color-primary);
+                    width: calc(100% - 10px);
+                    opacity: 1;
+                }
+
+                button {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

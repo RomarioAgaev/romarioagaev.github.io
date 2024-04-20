@@ -1,0 +1,406 @@
+@import 'scss-vars';
+
+.container:has(.portfolio__scrollbar) {
+    height: 0;
+}
+
+.portfolio {
+
+    .page__wrap {
+        display: block;
+        position: relative;
+    }
+
+    .page__content {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 16px 0 16px 0;
+        width: auto;
+
+        @media (min-width: $lg) {
+            padding-top: 30px;
+        }
+
+        @media (min-width: $xl) {
+            padding-top: 22px;
+        }
+
+        @media (min-width: $xxl) {
+            padding-top: 51px;
+        }
+
+        @media (min-width: $xxxl) {
+            padding-top: 34px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 49px;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: $xxl) {
+            gap: 54px;
+        }
+
+        @media (min-width: $xxxl) {
+            gap: 53px;
+        }
+    }
+
+    &__title {
+        display: none;
+        color: var(--color-primary);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+
+        @media (min-width: $lg) {
+            display: block;
+        }
+
+        @media (min-width: $xxl) {
+            font-size: 20px;
+        }
+
+        @media (min-width: $xxxl) {
+            font-size: 24px;
+        }
+    }
+
+    &__slider {
+        display: block;
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        user-select: none;
+
+        @media (min-width: $lg) {
+            padding-top: 49px;
+            padding-bottom: 45px;
+        }
+
+        @media (min-width: $xl) {
+            padding-top: 49px;
+            padding-bottom: 37px;
+        }
+
+        @media (min-width: $xxl) {
+            padding-top: 54px;
+            padding-bottom: 43px;
+        }
+
+        @media (min-width: $xxxl) {
+            padding-top: 53px;
+            padding-bottom: 54px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding-left: 12px;
+            overflow: visible;
+
+            @media (min-width: $sm) {
+                padding-left: calc((100vw - 540px) / 2 + 12px)
+            }
+
+            @media (min-width: $md) {
+                padding-left: calc((100vw - 720px) / 2 + 12px)
+            }
+
+            @media (min-width: $lg) {
+                padding-left: calc((100vw - 960px) / 2 + 12px + (960px / 100 * 8.33333333))
+            }
+
+            @media (min-width: $xl) {
+                padding-left: calc((100vw - 1140px) / 2 + 12px + (1140px / 100 * 8.33333333))
+            }
+
+            @media (min-width: $xxl) {
+                padding-left: calc((100vw - 1320px) / 2 + 12px + (1320px / 100 * 8.33333333))
+            }
+
+            @media (min-width: $xxxl) {
+                padding-left: calc((100vw - 1751px) / 2 + 12px + (1751px / 100 * 8.33333333))
+            }
+        }
+
+        .swiper-slide {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &__slide {
+        display: block;
+        position: relative;
+        width: auto;
+        height: 100%;
+        padding-right: 12px;
+
+        @media (min-width: $lg) {
+            padding-right: 23px;
+        }
+
+        @media (min-width: $xl) {
+            padding-right: 24px;
+        }
+
+        @media (min-width: $xxl) {
+            padding-right: 30px;
+        }
+
+        @media (min-width: $xxxl) {
+            padding-right: 36px;
+        }
+    }
+
+    &__scrollbar {
+        display: none;
+        position: relative;
+        width: 136px;
+        height: 30px;
+        bottom: 5px;
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        transition: all .27s ease-out;
+
+        &.hidden {
+            opacity: 0;
+            transform: translateY(3px) scale(0.99);
+        }
+
+        @media (min-width: $lg) {
+            display: block;
+        }
+
+        @media (min-width: $xl) {
+            width: 180px;
+        }
+
+        .swiper-scrollbar {
+            left: 0 !important;
+            top: 0 !important;
+            bottom: initial !important;
+            height: 100% !important;
+            width: 100% !important;
+            background-color: transparent;
+            border-radius: 0;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 4px;
+                border-radius: 999px;
+                background: var(--color-dark);
+                opacity: 0.3;
+
+                @media (min-width: $xxxl) {
+                    height: 6px;
+                }
+            }
+        }
+
+        .swiper-scrollbar-drag {
+            border-radius: 999px;
+            background: transparent;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 4px;
+                background: var(--color-primary);
+                border-radius: 999px;
+
+                @media (min-width: $xxxl) {
+                    height: 6px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: auto;
+        height: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+
+        @media (min-width: $xl) {
+            gap: 20px;
+        }
+
+        @media (min-width: $xxxl) {
+            gap: 30px;
+        }
+    }
+
+    &__pic {
+        display: block;
+        position: relative;
+        width: auto;
+        height: 100%;
+        cursor: pointer;
+        box-shadow: 0 0 0 0 transparent;
+        box-sizing: content-box;
+        transition: all .3s linear;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                &::after {
+                    box-shadow: 0px 38px 80px 0px rgba(0, 0, 0, 0.07),
+                        0px 7.6px 13px 0px rgba(0, 0, 0, 0.04);
+                }
+            }
+        }
+
+        @media (min-width: $lg) {
+            height: calc(100% - 67px);
+        }
+
+        @media (min-width: $xxl) {
+            height: calc(100% - 68px);
+        }
+
+        @media (min-width: $xxxl) {
+            height: calc(100% - 84px);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            background: transparent;
+            opacity: 1;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            transition: var(--base-transition);
+        }
+
+        img {
+            display: block;
+            position: relative;
+            width: auto;
+            height: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+    }
+
+    &__desc {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 6px;
+
+        @media (min-width: $lg) {
+            display: flex;
+            padding-top: 17px;
+        }
+
+        @media (min-width: $xxl) {
+            padding-top: 20px;
+        }
+
+        @media (min-width: $xxxl) {
+            padding-top: 30px;
+        }
+    }
+
+    &__number {
+        margin-left: 12px;
+        color: var(--color-dark);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+        letter-spacing: 2.88px;
+
+        @media (min-width: $xxl) {
+            font-size: 14px;
+            margin-left: 13px;
+        }
+
+        @media (min-width: $xxxl) {
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
+    }
+
+    &__name {
+        color: var(--color-primary);
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+        margin-right: 13px;
+
+        @media (min-width: $xl) {
+            margin-right: 12px;
+        }
+
+        @media (min-width: $xxl) {
+            font-size: 14px;
+        }
+
+        @media (min-width: $xxxl) {
+            font-size: 18px;
+        }
+    }
+
+    &__year {
+        margin-right: 13px;
+        margin-top: -10px;
+        width: 100%;
+        height: auto;
+        color: var(--color-dark);
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+
+        @media (min-width: $xl) {
+            margin-right: 12px;
+        }
+
+        @media (min-width: $xxl) {
+            font-size: 14px;
+            margin-top: -6px;
+        }
+
+        @media (min-width: $xxxl) {
+            font-size: 18px;
+            margin-top: 0px;
+        }
+    }
+}
