@@ -71,6 +71,43 @@
         },
         {
             "id": 3,
+            "number": "02",
+            "name": "Icelandic Mail App",
+            "year": 2022,
+            "video": "video/horizontal.mp4",
+            "poster": null,
+            "project": {
+                "title": "E-commerce & Blog Interface",
+                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "contacts": {
+                    "dribbble": "https://dribbble.com/Roman_Agaev"
+                },
+                "items": [
+                    {
+                        "video": "video/horizontal.mp4",
+                        "poster": ""
+                    },
+                    {
+                        "description": "",
+                        "img": "img/liberation.jpg"
+                    },
+                    {
+                        "video": "video/vertical.mp4",
+                        "poster": "img/vertical.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/icelandic.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/father.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
             "number": "03",
             "name": "Name of the Project",
             "year": 2023,
@@ -91,7 +128,29 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
+            "number": "03",
+            "name": "Name of the Project",
+            "year": 2023,
+            "video": "video/vertical.mp4",
+            "poster": "img/vertical.jpg",
+            "project": {
+                "title": "E-commerce & Blog Interface",
+                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "contacts": {
+                    "dribbble": "https://dribbble.com/Roman_Agaev",
+                    "instagram": "https://www.instagram.com/"
+                },
+                "items": [
+                    {
+                        "description": "",
+                        "img": "img/father.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
             "number": "04",
             "name": "App",
             "year": 2024,

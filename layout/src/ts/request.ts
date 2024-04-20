@@ -21,7 +21,9 @@ interface About {
 interface Portfolio {
     id: string | number
     name: string
-    img: string
+    img?: string
+    video?: string
+    poster?: string
     number?: string
     year?: number
     project?: Project
@@ -30,8 +32,10 @@ interface Portfolio {
 interface Project {
     title?: string
     description?: string
+    video?: string
+    poster?: string
     contacts?: {[key: string]: string}
-    items?: {description: string, img: string}[]
+    items?: {description?: string, img?: string, video?: string, poster?: string}[]
 }
 
 interface Data {
@@ -40,7 +44,7 @@ interface Data {
     contacts: Contacts
 }
 
-const getProject = (project: Project, id: string): HTMLElement => {
+const getProjectList = (project: Project, id: string): HTMLElement => {
     const projectItem = document.createElement('div')
     projectItem.classList.add('project__item')
     projectItem.setAttribute('data-project', id)
@@ -87,10 +91,21 @@ const getProject = (project: Project, id: string): HTMLElement => {
 
     if (project.items) {
         for (const slide of project.items) {
+
+            let media
+
+            if (slide.img) {
+                media = `<img src="${slide.img}" alt="${slide.description}">`
+            }
+
+            if (slide.video) {
+                media = `<video autoplay muted loop preload="auto" poster="${slide.poster}" src="${slide.video}"><source src="${slide.video}" type="video/mp4"></video>`
+            }
+
             item += `
                                 <div class="swiper-slide">
                                     <div class="project__slide">
-                                        <img src="${slide.img}" alt="${slide.description}">
+                                        ${media}
                                     </div>
                                 </div>`
         }
@@ -117,6 +132,8 @@ const setPortfolio = (portfolio: Portfolio[]) => {
     for (let i = 0; i < portfolio.length; i++) {
         const item = portfolio[i]
 
+        if (!item.img && !item.video) continue
+
         const swiperSlide = document.createElement('div')
         swiperSlide.classList.add('swiper-slide')
 
@@ -131,8 +148,15 @@ const setPortfolio = (portfolio: Portfolio[]) => {
         portfolioPic.setAttribute('data-project-name', `project-${item.id}`)
 
         const img = document.createElement('img')
-        img.src = item.img
-        img.alt = item.name
+        if (item.img) {
+            img.src = item.img
+            img.alt = item.name
+        }
+
+        let video
+        if (item.video) {
+            video = `<video autoplay muted loop preload="auto" poster="${item.poster}" src="${item.video}"><source src="${item.video}" type="video/mp4"></video>`
+        }
 
         const portfolioDesc = document.createElement('div')
         portfolioDesc.classList.add('portfolio__desc')
@@ -150,38 +174,56 @@ const setPortfolio = (portfolio: Portfolio[]) => {
         if (item.year) portfolioYear.innerHTML = item.year.toString()
 
         const backpic = document.createElement('div')
-        backpic.classList.add('backpic')
 
         if (item.project?.items?.length && item.project?.items?.length > 1) {
-            const backpicImg = document.createElement('img')
-            backpicImg.src = item.project?.items?.[1].img
-            backpicImg.alt = item.project?.items?.[1].description
+            for (const i of item.project?.items) {
+                if (i.img) {
+                    const backpicImg = document.createElement('img')
+                    backpicImg.src = i.img
+                    if (i.description) backpicImg.alt = i.description
 
-            backpic.appendChild(backpicImg)
-            portfolioPic.appendChild(backpic)
+                    backpic.classList.add('backpic')
+                    backpic.appendChild(backpicImg)
+                    portfolioPic.appendChild(backpic)
+
+                    break
+                }
+            }
         }
 
         // Building slide
         swiperSlide.appendChild(portfolioSlide)
         portfolioSlide.appendChild(portfolioItem)
-        portfolioItem.appendChild(portfolioPic)
-        portfolioItem.appendChild(portfolioDesc)
-        portfolioPic.appendChild(img)
+
+        if (item.img) {
+            portfolioItem.appendChild(portfolioPic)
+            portfolioItem.appendChild(portfolioDesc)
+            portfolioPic.appendChild(img)
+        }
+
+        if (item.video && video) {
+            portfolioItem.appendChild(portfolioPic)
+            portfolioItem.appendChild(portfolioDesc)
+            portfolioPic.insertAdjacentHTML('beforeend', video)
+        }
+
         // portfolioDesc.appendChild(portfolioNumber)
         portfolioDesc.appendChild(portfolioName)
         portfolioDesc.appendChild(portfolioYear)
 
         // Push slide to portfolio list
-        portfolioList?.appendChild(swiperSlide)
+        if (item.img || item.video) {
+            portfolioList?.appendChild(swiperSlide)
 
-        // Add slider with project elements for current portfolio item
-        if (item.project) {
-            projectList?.appendChild(
-                getProject(
-                    item.project,
-                    `project-${item.id}`
+            // Add slider with project elements for current portfolio item
+            if (item.project) {
+                projectList?.appendChild(
+                    getProjectList(
+                        item.project,
+                        `project-${item.id}`
+                    )
                 )
-            )
+            }
         }
 
         const LOADING_DURATION = 5000
