@@ -44,6 +44,7 @@ body {
     background: var(--color-back-prime) no-repeat center;
     background-image: var(--back-img);
     background-size: cover;
+    background-attachment: fixed;
 
     color: var(--color-primary);
     font-family: var(--font-family);

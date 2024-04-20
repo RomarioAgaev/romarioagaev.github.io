@@ -25,6 +25,7 @@
         background: var(--color-back-prime) no-repeat center;
         background-image: var(--back-img);
         background-size: cover;
+        background-attachment: fixed;
 
         transition: all 2s var(--synth-timing-func);
     }
