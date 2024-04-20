@@ -55,7 +55,7 @@ const getProject = (project: Project, id: string): HTMLElement => {
                     <h2 class="project__title">${project.title}</h2>
                     <p class="project__text">${project.description}</p>
                     <div class="project__controllers">
-                        <span class="project__nav project__nav_prev"><i></i></span>
+                        <span class="project__nav project__nav_prev"></span>
                         <div class="project__pagination">
                             <mark class="project__pagination_current">1</mark>
                             <span>&nbsp;</span>
@@ -63,7 +63,7 @@ const getProject = (project: Project, id: string): HTMLElement => {
                             <span>&nbsp;</span>
                             <mark class="project__pagination_all">${project?.items?.length}</mark>
                         </div>
-                        <span class="project__nav project__nav_next"><i></i></span>
+                        <span class="project__nav project__nav_next"></span>
                     </div>
                 </div>
                 <ul class="project__socials">`
@@ -149,13 +149,25 @@ const setPortfolio = (portfolio: Portfolio[]) => {
         portfolioYear.classList.add('portfolio__year')
         if (item.year) portfolioYear.innerHTML = item.year.toString()
 
+        const backpic = document.createElement('div')
+        backpic.classList.add('backpic')
+
+        if (item.project?.items?.length && item.project?.items?.length > 1) {
+            const backpicImg = document.createElement('img')
+            backpicImg.src = item.project?.items?.[1].img
+            backpicImg.alt = item.project?.items?.[1].description
+
+            backpic.appendChild(backpicImg)
+            portfolioPic.appendChild(backpic)
+        }
+
         // Building slide
         swiperSlide.appendChild(portfolioSlide)
         portfolioSlide.appendChild(portfolioItem)
         portfolioItem.appendChild(portfolioPic)
         portfolioItem.appendChild(portfolioDesc)
         portfolioPic.appendChild(img)
-        portfolioDesc.appendChild(portfolioNumber)
+        // portfolioDesc.appendChild(portfolioNumber)
         portfolioDesc.appendChild(portfolioName)
         portfolioDesc.appendChild(portfolioYear)
 

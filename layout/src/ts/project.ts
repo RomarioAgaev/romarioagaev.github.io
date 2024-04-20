@@ -1,35 +1,52 @@
 import Swiper from 'swiper'
-import { Navigation,  } from 'swiper/modules'
+import { Navigation } from 'swiper/modules'
+import { compressPage, uncompressPage } from './pages'
 
 interface CustomSwiper extends Swiper {
     slides: HTMLElement[]
 }
 
 const showProject = (project: HTMLDivElement) => {
+    const portfolioScrollbar: HTMLDivElement | null = document
+        .querySelector('.portfolio__scrollbar')
+
     const projectList: HTMLDivElement | null = document
         .querySelector('.project__list')
 
     const projectName: string = project.dataset.projectName as string
 
     const projectItem: HTMLDivElement | null = document
-        .querySelector(`[data-project='${projectName}']`)
+    .querySelector(`[data-project='${projectName}']`)
 
     if (!projectList || !projectItem) return
 
-    projectList.classList.add('show')
-    projectItem.classList.add('show')
+    compressPage()
+    portfolioScrollbar?.classList.add('hidden')
+
+    setTimeout(() => {
+        projectList.classList.add('show')
+        projectItem.classList.add('show')
+    }, 300)
 }
 
 const hideProject = (buttonClose: HTMLButtonElement) => {
-    const projectItem: HTMLDivElement | null = buttonClose
+    const portfolioScrollbar: HTMLDivElement | null = document
+        .querySelector('.portfolio__scrollbar')
+
+        const projectItem: HTMLDivElement | null = buttonClose
             .closest('.project__item')
-    const projectList: HTMLDivElement | null = buttonClose
+
+            const projectList: HTMLDivElement | null = buttonClose
         .closest('.project__list')
 
     if (!projectItem || !projectList) return
 
     projectItem.classList.remove('show')
     setTimeout(() => projectList.classList.remove('show'), 750)
+    setTimeout(() => {
+        uncompressPage()
+        portfolioScrollbar?.classList.remove('hidden')
+    }, 1250)
 }
 
 const initProjects = () => {

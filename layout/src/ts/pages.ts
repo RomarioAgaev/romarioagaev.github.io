@@ -53,4 +53,5 @@ const togglePage = (pageIdx: number): void => {
     }
 }
 
+export { compressPage, uncompressPage }
 export default togglePage

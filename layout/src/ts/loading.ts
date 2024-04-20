@@ -46,7 +46,13 @@ const initLoading = () => {
 const hideLoading = () => {
     const loading = document.getElementById('loading');
     loading?.classList.add('loaded')
-    setTimeout(() => loading?.remove(), 1000)
+    setTimeout(() => {
+        loading?.remove()
+
+        // Show background images on the projects
+        const backpicList = Array.from(document.querySelectorAll('.backpic'))
+        backpicList.forEach(backpic => backpic.classList.add('visible'))
+    }, 1000)
 }
 
 export { initLoading, hideLoading }

@@ -262,9 +262,7 @@
         width: auto;
         height: 100%;
         cursor: pointer;
-        box-shadow: 0 0 0 0 transparent;
         box-sizing: content-box;
-        transition: all .3s linear;
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
@@ -291,7 +289,7 @@
             content: '';
             display: block;
             position: absolute;
-            z-index: 1;
+            z-index: 2;
             top: 0;
             left: 0;
             width: 100%;
@@ -300,24 +298,65 @@
             overflow: hidden;
             background: transparent;
             opacity: 1;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             transition: var(--base-transition);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
-        img {
+        & > img {
             display: block;
             position: relative;
+            z-index: 1;
             width: auto;
             height: 100%;
             border-radius: 6px;
             overflow: hidden;
         }
+
+        .backpic {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: var(--color-back-prime);
+            transform: rotate(0deg);
+            opacity: 0.5;
+            border-radius: 6px;
+            transition: var(--synth-transition);
+            overflow: hidden;
+
+            &.visible {
+                transform: rotate(-3deg);
+            }
+
+            img {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+                object-fit: cover;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: var(--color-back-prime);
+                }
+            }
+        }
     }
 
     &__desc {
         display: none;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: space-between;
         gap: 6px;
 
@@ -380,7 +419,7 @@
     &__year {
         margin-right: 13px;
         margin-top: -10px;
-        width: 100%;
+        // width: 100%;
         height: auto;
         color: var(--color-dark);
         text-align: right;

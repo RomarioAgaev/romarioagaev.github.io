@@ -41,8 +41,10 @@ body {
     margin: 0;
     overflow-x: hidden;
 
-    background: var(--color-back-prime);
-    color: var(--color-font-primary);
+    background: var(--color-back-prime) no-repeat center;
+    background-image: var(--back-img);
+
+    color: var(--color-primary);
     font-family: var(--font-family);
     font-weight: 400;
     font-style: normal;
