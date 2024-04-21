@@ -51,6 +51,10 @@ body {
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
+
+    &.project-open {
+        overflow: hidden;
+    }
 }
 
 .container {

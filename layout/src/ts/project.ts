@@ -22,10 +22,12 @@ const showProject = (project: HTMLDivElement) => {
 
     compressPage()
     portfolioScrollbar?.classList.add('hidden')
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     setTimeout(() => {
         projectList.classList.add('show')
         projectItem.classList.add('show')
+        document.body.classList.add('project-open')
     }, 300)
 }
 
@@ -42,7 +44,11 @@ const hideProject = (buttonClose: HTMLButtonElement) => {
     if (!projectItem || !projectList) return
 
     projectItem.classList.remove('show')
-    setTimeout(() => projectList.classList.remove('show'), 750)
+    setTimeout(() => {
+        projectList.classList.remove('show')
+        document.body.classList.remove('project-open')
+    }, 750)
+
     setTimeout(() => {
         uncompressPage()
         portfolioScrollbar?.classList.remove('hidden')
