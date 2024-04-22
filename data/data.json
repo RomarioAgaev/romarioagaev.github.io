@@ -23,32 +23,24 @@
         {
             "id": 2,
             "number": "02",
-            "name": "Icelandic Mail App",
+            "name": "Iceland Player",
             "year": 2022,
-            "img": "img/icelandic.jpg",
+            "img": "img/Project_2/Project_2.1.png",
             "project": {
-                "title": "E-commerce & Blog Interface",
-                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "title": "Iceland Player",
+                "description": "Hi, guys, I present to your attention the application collection of Icelandic music. The goal was to create a clean and simple audio player with an intuitive interface",
                 "contacts": {
-                    "dribbble": "https://dribbble.com/Roman_Agaev"
+                    "dribbble": "https://dribbble.com/shots/11111360-Iceland-Player"
                 },
                 "items": [
                     {
-                        "description": "",
-                        "img": "img/app.jpg"
+                        "description": "Iceland Player",
+                        "img": "img/Project_2/Project_2.1.png"
                     },
                     {
-                        "description": "",
-                        "img": "img/liberation.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/icelandic.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/father.jpg"
-                    }
+                        "video": "video/Project_2/Project_2.mp4",
+                        "poster": ""
+                    } 
                 ]
             }
         },
@@ -57,34 +49,17 @@
             "number": "02",
             "name": "Icelandic Mail App",
             "year": 2022,
-            "video": "video/horizontal.mp4",
-            "poster": null,
+            "img": "img/Project_3/Project_3.1.png",
             "project": {
-                "title": "E-commerce & Blog Interface",
-                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "title": "Icelandic Mail App",
+                "description": "Hello everyone! Our team has created a design and prototype for a new mail app. The main focus of our service is personalization and customizing the app to suit each user's needs. The colour scheme automatically adapts to the theme chosen by the user, and can also be configured separately and individually.",
                 "contacts": {
-                    "dribbble": "https://dribbble.com/Roman_Agaev"
+                    "dribbble": "https://dribbble.com/shots/17827487-Icelandic-Mail-App"
                 },
                 "items": [
                     {
-                        "video": "video/horizontal.mp4",
-                        "poster": ""
-                    },
-                    {
-                        "description": "",
-                        "img": "img/liberation.jpg"
-                    },
-                    {
-                        "video": "video/vertical.mp4",
-                        "poster": "img/vertical.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/icelandic.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/father.jpg"
+                        "description": "Icelandic Mail App",
+                        "img": "img/Project_3/Project_3.1.png"
                     }
                 ]
             }
