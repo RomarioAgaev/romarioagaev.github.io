@@ -5,34 +5,17 @@
             "number": "01",
             "name": "Liberation",
             "year": 2021,
-            "img": "img/liberation.jpg",
+            "img": "img/Project_1/Project_1.png",
             "project": {
-                "title": "E-commerce & Blog Interface",
-                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "title": "Liberation",
+                "description": "Jack was wandering through the depths of the forest, not realising how far he was from his home. Nature was beckoning and attracting the hero. The soft whisper of rain on the leaves was singing an autumn ode, inviting to oblivion and detachment from the earthly world. It was at that very moment when Jack realised his nature and liberated it into the wild. The old Jack has never been seen again…",
                 "contacts": {
-                    "dribbble": "https://dribbble.com/Roman_Agaev",
-                    "instagram": "https://www.instagram.com/"
+                    "foundation": "https://foundation.app/mint/eth/0x3B3ee1931Dc30C1957379FAc9aba94D1C48a5405/74308",
                 },
                 "items": [
                     {
-                        "description": "",
-                        "img": "img/icelandic.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/app.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/father.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/icelandic.jpg"
-                    },
-                    {
-                        "description": "",
-                        "img": "img/liberation.jpg"
+                        "description": "Octopus",
+                        "img": "img/Project_1/Project_1.png"
                     }
                 ]
             }
