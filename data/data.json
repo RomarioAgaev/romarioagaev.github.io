@@ -70,7 +70,7 @@
             "number": "04",
             "name": "Father",
             "year": 2021,
-            "img": "img/Project_4/Project_4.1.jpg",
+            "img": "img/Project_4/Project_4.1.png",
             "project": {
                 "title": "Father",
                 "description": "Jack rarely recalled his father as well as his native home. He last had seen his dad just before him leaving for war. He was standing on the platform and clutching a handwritten letter.",
@@ -80,7 +80,7 @@
                 "items": [
                     {
                         "description": "Father",
-                        "img": "img/Project_4/Project_4.1.jpg"
+                        "img": "img/Project_4/Project_4.1.png"
                     }
                 ]
             }
