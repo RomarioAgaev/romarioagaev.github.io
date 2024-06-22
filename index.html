@@ -15,6 +15,14 @@
 
 	Прим.: <body class="dark-theme">
 -->
+
+<!--
+	Чтобы вернуть картинку-заглушку для страницы About нужно:
+		1. Удалить строку ниже <style> .about__photo { background: none !important } </style>
+		2. В папке img поменять файл img\placeholder.png на новую заглушку
+-->
+<style> .about__photo { background: none !important } </style>
+
 <body class="dark-theme">
 	<header class="header"><div class="container"><div class="header__body"><nav class="nav"><ul class="nav__list"><li class="nav__item active"><button type="button" data-target="portfolio">Portfolio</button></li><li class="nav__item"><button type="button" data-target="about">About</button></li><li class="nav__item"><button type="button" data-target="contact">Contact</button></li></ul></nav></div></div></header>
 	<main class="main">
