@@ -7,6 +7,7 @@
             "year": 2021,
             "img": "img/Project_1/Project_1.png",
             "project": {
+                "backpic": null,
                 "title": "Liberation",
                 "description": "Jack was wandering through the depths of the forest, not realising how far he was from his home. Nature was beckoning and attracting the hero. The soft whisper of rain on the leaves was singing an autumn ode, inviting to oblivion and detachment from the earthly world. It was at that very moment when Jack realised his nature and liberated it into the wild. The old Jack has never been seen again…",
                 "contacts": {
@@ -28,6 +29,7 @@
             "year": 2022,
             "img": "img/Project_2/Project_2.1.png",
             "project": {
+                "backpic": "img/Project_2/Project_2.1.png",
                 "title": "Iceland Player",
                 "description": "Hi, guys, I present to your attention the application collection of Icelandic music. The goal was to create a clean and simple audio player with an intuitive interface",
                 "contacts": {
@@ -41,7 +43,7 @@
                     {
                         "video": "video/Project_2/Project_2.mp4",
                         "poster": ""
-                    } 
+                    }
                 ]
             }
         },
@@ -52,6 +54,7 @@
             "year": 2022,
             "img": "img/Project_3/Project_3.1.png",
             "project": {
+                "backpic": null,
                 "title": "Icelandic Mail App",
                 "description": "Hello everyone! Our team has created a design and prototype for a new mail app. The main focus of our service is personalization and customizing the app to suit each user's needs. The colour scheme automatically adapts to the theme chosen by the user, and can also be configured separately and individually.",
                 "contacts": {
@@ -72,6 +75,7 @@
             "year": 2021,
             "img": "img/Project_4/Project_4.1.png",
             "project": {
+                "backpic": null,
                 "title": "Father",
                 "description": "Jack rarely recalled his father as well as his native home. He last had seen his dad just before him leaving for war. He was standing on the platform and clutching a handwritten letter.",
                 "contacts": {
@@ -92,6 +96,7 @@
             "year": 2022,
             "img": "img/Project_5/Project_5.1.png",
             "project": {
+                "backpic": "img/Project_5/Project_5.2.png",
                 "title": "Home Credit Bank",
                 "description": "Hello everyone! We have a great new project - to redesign the main screen of our mobile app and the payment transfer screen for Home Credit Bank. We've worked hard to come up with a design that will make it easier for users to switch between cards and accounts. When users switch to the payment screen, they see a circle with photos or company logos of people and companies they interact with most often. By clicking on a photo or logo, a list of recent transactions will open. To switch cards or accounts, users can swipe or simply open the entire list. After a successful transaction, we suggest creating a template for future payments.",
                 "contacts": {
@@ -120,6 +125,7 @@
             "year": 2019,
             "img": "img/Project_6/Project_6.1.png",
             "project": {
+                "backpic": null,
                 "title": "Product Card The North Face",
                 "description": "Hello everybody! I share with you my first concept for the mega-brand The North Face. The aim was to create a product page for a new outdoor clothing line. The page should be simple, clean and highlight the best features of the product: its frostproof quality, lightness and comfort.",
                 "contacts": {
@@ -140,6 +146,7 @@
             "year": 2020,
             "img": "img/Project_7/Project_7.1.png",
             "project": {
+                "backpic": "img/Project_7/Project_7.2.png",
                 "title": "E-commerce & Blog UI-Interface",
                 "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
                 "contacts": {

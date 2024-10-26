@@ -30,6 +30,7 @@ interface Portfolio {
 }
 
 interface Project {
+    backpic: string | null,
     title?: string
     description?: string
     video?: string
@@ -173,22 +174,13 @@ const setPortfolio = (portfolio: Portfolio[]) => {
         portfolioYear.classList.add('portfolio__year')
         if (item.year) portfolioYear.innerHTML = item.year.toString()
 
-        const backpic = document.createElement('div')
-
-        if (item.project?.items?.length && item.project?.items?.length > 1) {
-            for (const i of item.project?.items) {
-                if (i.img) {
-                    const backpicImg = document.createElement('img')
-                    backpicImg.src = i.img
-                    if (i.description) backpicImg.alt = i.description
-
-                    backpic.classList.add('backpic')
-                    backpic.appendChild(backpicImg)
-                    portfolioPic.appendChild(backpic)
-
-                    break
-                }
-            }
+        if (item.project?.backpic) {
+            const backpic = document.createElement('div')
+            const backpicImg = document.createElement('img')
+            backpicImg.src = item.project?.backpic
+            backpic.classList.add('backpic')
+            backpic.appendChild(backpicImg)
+            portfolioPic.appendChild(backpic)
         }
 
         // Building slide
