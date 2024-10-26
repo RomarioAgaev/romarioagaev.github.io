@@ -5,7 +5,7 @@
             "number": "01",
             "name": "Liberation",
             "year": 2021,
-            "img": "img/Project_1/Project_1.png",
+            "img": "img/Project_1/Project_1.webp",
             "project": {
                 "backpic": null,
                 "title": "Liberation",
@@ -17,7 +17,7 @@
                 "items": [
                     {
                         "description": "Octopus",
-                        "img": "img/Project_1/Project_1.png"
+                        "img": "img/Project_1/Project_1.webp"
                     }
                 ]
             }
@@ -27,9 +27,9 @@
             "number": "02",
             "name": "Iceland Player",
             "year": 2022,
-            "img": "img/Project_2/Project_2.1.png",
+            "img": "img/Project_2/Project_2.1.webp",
             "project": {
-                "backpic": "img/Project_2/Project_2.1.png",
+                "backpic": "img/Project_2/Project_2.1.webp",
                 "title": "Iceland Player",
                 "description": "Hi, guys, I present to your attention the application collection of Icelandic music. The goal was to create a clean and simple audio player with an intuitive interface",
                 "contacts": {
@@ -38,7 +38,7 @@
                 "items": [
                     {
                         "description": "Iceland Player",
-                        "img": "img/Project_2/Project_2.1.png"
+                        "img": "img/Project_2/Project_2.1.webp"
                     },
                     {
                         "video": "video/Project_2/Project_2.mp4",
@@ -52,7 +52,7 @@
             "number": "03",
             "name": "Icelandic Mail App",
             "year": 2022,
-            "img": "img/Project_3/Project_3.1.png",
+            "img": "img/Project_3/Project_3.1.webp",
             "project": {
                 "backpic": null,
                 "title": "Icelandic Mail App",
@@ -63,7 +63,7 @@
                 "items": [
                     {
                         "description": "Icelandic Mail App",
-                        "img": "img/Project_3/Project_3.1.png"
+                        "img": "img/Project_3/Project_3.1.webp"
                     }
                 ]
             }
@@ -73,7 +73,7 @@
             "number": "04",
             "name": "Father",
             "year": 2021,
-            "img": "img/Project_4/Project_4.1.png",
+            "img": "img/Project_4/Project_4.1.webp",
             "project": {
                 "backpic": null,
                 "title": "Father",
@@ -84,7 +84,7 @@
                 "items": [
                     {
                         "description": "Father",
-                        "img": "img/Project_4/Project_4.1.png"
+                        "img": "img/Project_4/Project_4.1.webp"
                     }
                 ]
             }
@@ -94,9 +94,9 @@
             "number": "05",
             "name": "Home Credit Bank",
             "year": 2022,
-            "img": "img/Project_5/Project_5.1.png",
+            "img": "img/Project_5/Project_5.1.webp",
             "project": {
-                "backpic": "img/Project_5/Project_5.2.png",
+                "backpic": "img/Project_5/Project_5.2.webp",
                 "title": "Home Credit Bank",
                 "description": "Hello everyone! We have a great new project - to redesign the main screen of our mobile app and the payment transfer screen for Home Credit Bank. We've worked hard to come up with a design that will make it easier for users to switch between cards and accounts. When users switch to the payment screen, they see a circle with photos or company logos of people and companies they interact with most often. By clicking on a photo or logo, a list of recent transactions will open. To switch cards or accounts, users can swipe or simply open the entire list. After a successful transaction, we suggest creating a template for future payments.",
                 "contacts": {
@@ -105,15 +105,15 @@
                 "items": [
                     {
                         "description": "Home Credit Bank",
-                        "img": "img/Project_5/Project_5.1.png"
+                        "img": "img/Project_5/Project_5.1.webp"
                     },
                     {
                         "description": "Home Credit Bank",
-                        "img": "img/Project_5/Project_5.2.png"
+                        "img": "img/Project_5/Project_5.2.webp"
                     },
                     {
                         "description": "Home Credit Bank",
-                        "img": "img/Project_5/Project_5.3.png"
+                        "img": "img/Project_5/Project_5.3.webp"
                     }
                 ]
             }
@@ -123,7 +123,7 @@
             "number": "06",
             "name": "Product Card | The North Face",
             "year": 2019,
-            "img": "img/Project_6/Project_6.1.png",
+            "img": "img/Project_6/Project_6.1.webp",
             "project": {
                 "backpic": null,
                 "title": "Product Card The North Face",
@@ -134,7 +134,7 @@
                 "items": [
                     {
                         "description": "Product Card The North Face",
-                        "img": "img/Project_6/Project_6.1.png"
+                        "img": "img/Project_6/Project_6.1.webp"
                     }
                 ]
             }
@@ -144,9 +144,9 @@
             "number": "07",
             "name": "E-commerce & Blog UI-Interface",
             "year": 2020,
-            "img": "img/Project_7/Project_7.1.png",
+            "img": "img/Project_7/Project_7.1.webp",
             "project": {
-                "backpic": "img/Project_7/Project_7.2.png",
+                "backpic": "img/Project_7/Project_7.2.webp",
                 "title": "E-commerce & Blog UI-Interface",
                 "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
                 "contacts": {
@@ -155,15 +155,15 @@
                 "items": [
                     {
                         "description": "E-commerce & Blog UI-Interface",
-                        "img": "img/Project_7/Project_7.1.png"
+                        "img": "img/Project_7/Project_7.1.webp"
                     },
                     {
                         "description": "E-commerce & Blog UI-Interface",
-                        "img": "img/Project_7/Project_7.2.png"
+                        "img": "img/Project_7/Project_7.2.webp"
                     },
                     {
                         "description": "E-commerce & Blog UI-Interface",
-                        "img": "img/Project_7/Project_7.3.png"
+                        "img": "img/Project_7/Project_7.3.webp"
                     }
                 ]
             }
